@@ -1,7 +1,9 @@
 # Outside
+<img width="965" alt="Captura de ecrã 2021-12-26, às 23 33 52" src="https://user-images.githubusercontent.com/62473939/147422475-54584656-1332-470f-b935-2220adc0f7e8.png">
 Outside é um jogo em 2d em desenvolvimento realizado por 3 jovens que decidiram aderir á criação dentro do mundo dos jogos.
 
 Introdução ...
+
 
 No âmbito da PAP (Prova de Aptidão Profissional) pretendemos realizar um jogo 2D (duas dimensões) em Unity (programa para desenvolver jogos).
 
