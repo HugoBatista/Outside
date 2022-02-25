@@ -15,6 +15,7 @@ public class Video : MonoBehaviour
     public VideoPlayer Videoa;
     public VideoClip[] videoClips;
     public GameObject ativar;
+    public GameObject TextoVitoria;
     
    
     
@@ -27,15 +28,23 @@ public class Video : MonoBehaviour
     }
     void Start()
     {
-        StartCoroutine(Test ()); 
+        StartCoroutine(Creditos ()); 
+        StartCoroutine(TextoV ());
     }
 
-    IEnumerator Test()
+    IEnumerator Creditos()
     {
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(10);
         ativar.SetActive(true);
         Videoa.clip = videoClips [0];
+        TextoVitoria.SetActive(false);
         
+    }
+    IEnumerator TextoV()
+    {
+        yield return new WaitForSeconds(5);
+        TextoVitoria.SetActive(true);
+
     }
 }
     

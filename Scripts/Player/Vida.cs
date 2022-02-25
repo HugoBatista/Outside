@@ -41,6 +41,7 @@ public class Vida : MonoBehaviour
             vida = 5;
 
         }
+        
 
  
     }
@@ -48,6 +49,11 @@ public class Vida : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Inimigo")){
+            vida -= Damage;
+
+        }
+
+        else if (collision.gameObject.CompareTag("Boss")){
             vida -= Damage;
 
         }

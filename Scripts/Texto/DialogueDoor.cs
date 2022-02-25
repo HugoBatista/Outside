@@ -1,20 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class DialogueDoor : MonoBehaviour
 {
-    public TextMeshProUGUI textComponent;
+    public Text textComponent;
     public string[] lines;
     public float textSpeed;
     public KeyCode interactKey;
     private int index;
-
-
+    public GameObject collider;
+    public GameObject collider1;
+    public GameObject collider2;
+    public GameObject collider3;
     
     void Start()
     {
+        collider.SetActive(true);
+        collider1.SetActive(true);
+        collider2.SetActive(true);
+        collider3.SetActive(true);
         textComponent.text = string.Empty; // faz com que o que tem dentro do texto do TMPro fique vazio e seja preenchido pelas listas que iram ter o seu texto independentemente para a apari��o com a colisao do personagem com x coisa.
         StartDialouge(); // Faz com que o sistema de dialogo inicie 
     }
@@ -63,7 +69,11 @@ public class DialogueDoor : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false); // Desativa o sistema e desliga at� encontrar o proximo collider que ira ativar o texto do sistema de dialogo.
+            gameObject.SetActive(false); // Desativa o sistema e desliga até encontrar o proximo collider que ira ativar o texto do sistema de dialogo.
+            collider.SetActive(false);
+            collider1.SetActive(false);
+            collider2.SetActive(false);
+            collider3.SetActive(false);
         }
     }
 

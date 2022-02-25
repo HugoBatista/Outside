@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class AttackPlayer : MonoBehaviour
 {
-
-    public Sprite fogo;
+   
+    public GameObject fogo;
     float horizontal;
     float vertical;
     public Transform attackPointPos;
@@ -13,10 +13,12 @@ public class AttackPlayer : MonoBehaviour
     public LayerMask enemyLayer;
     public int dano = 1;
     public GameObject attackPoint;
-
+    public float tempo_efeito;
     public float attackSpeed = 2f;
     float nextAttackTime = 0f;
     // Update is called once per frame
+
+    
     void Update()
     {
 
@@ -27,9 +29,12 @@ public class AttackPlayer : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 Attack();
+                nextAttackTime = Time.time + 1f / attackSpeed;
+                StartCoroutine(Fogo_Efeito());
+
                 
 
-                nextAttackTime = Time.time + 1f / attackSpeed;
+
 
                 
             }
@@ -63,19 +68,35 @@ public class AttackPlayer : MonoBehaviour
         
         //todos os inimigos atingidos pelo collider de attaque sao adicionados a um array
         Collider2D[] hitEnemies =  Physics2D.OverlapCircleAll(attackPointPos.position, attackRange,enemyLayer);
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = fogo;
+
+        
+
         foreach(Collider2D enemy in hitEnemies){
-            enemy.GetComponent<Inimigos>().TakeDamage(dano);
+            if (enemy.CompareTag("Inimigo")){
+                enemy.GetComponent<Inimigos>().TakeDamage(dano);
+            }
+            else if (enemy.CompareTag("Miniboss")){
+                enemy.GetComponent<Entidades>().TakeDamage(dano);
+                Debug.Log("dsg");
+            }
+
+            else if (enemy.CompareTag("Boss")){
+                enemy.GetComponent<ScriptBoss>().TakeDamage(dano);
+            }
+            
             Debug.Log("no");
         }
         
         Debug.Log("Yes");
 
 
+    }
 
+    IEnumerator Fogo_Efeito(){
+        fogo.SetActive(true);
+        yield return new WaitForSeconds(tempo_efeito);
+        fogo.SetActive(false);
         
-
-
     }
 
 }
