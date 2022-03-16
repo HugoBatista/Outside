@@ -20,3 +20,5 @@ Os recursos que serão o Unity para a criação do jogo, o Visual Studio 2019 pa
 
 Realizado por Hugo Barros, Ricardo Gomes e Angelo Costa.
 
+Link da pagina do jogo: https://0utdetad.itch.io/outside
+
