@@ -1,24 +1,22 @@
 # Outside
 <img width="965" alt="Captura de ecrã 2021-12-26, às 23 33 52" src="https://user-images.githubusercontent.com/62473939/147422475-54584656-1332-470f-b935-2220adc0f7e8.png">
-Outside é um jogo em 2d em desenvolvimento realizado por 3 jovens que decidiram aderir á criação dentro do mundo dos jogos.
-
-Introdução ...
 
 
-No âmbito da PAP (Prova de Aptidão Profissional) pretendemos realizar um jogo 2D (duas dimensões) em Unity (programa para desenvolver jogos).
+Outside is a 2d game made by 3 young people who developed into the world of games in creation within one of the games.
+Introduction...
 
-A ideia deste projeto surgiu porque sempre encaramos os videojogos como um dos melhores meios artísticos e decidimos que queríamos fazer um também aplicando os nossos conhecimentos em informática.
+As part of the PAP (Professional Aptitude Test) we intend to make a 2D game (two dimensions) in Unity (program to develop games).
 
-Com este jogo pretendemos estimular o raciocínio através da resolução de puzzles e estratégias de combate.
+The idea of this project we have always faced with video games as an artistic medium and also because we want to make one by applying our better computer skills.
 
-Descrição do Projeto ...
+With this game, we intend to stimulate the game by solving puzzles and combat strategies.
 
-O tema do jogo é RPG (Roleplaying game) com estilo de combate em turnos cujo o objetivo é escapar de uma masmorra  onde o protagonista foi preso. 
-Para fazer isso o protagonista terá de derrotar inimigos para passar à próxima fase e resolver puzzles para obter as chaves para abrir a porta para a sua liberdade.
+Project description...
 
-Os recursos que serão o Unity para a criação do jogo, o Visual Studio 2019 para a criação de Scripts para o jogo, o Mega para o armazenamento dos dados do projeto e o Paint.Net para o design  do jogo.
+The game's theme is RPG (Roleplaying game) with a turn-based combat style whose objective is to escape from a dungeon where the protagonist has been imprisoned. To do this, the protagonist from defeat to move to the next will have and solve puzzles to get the keys to open their freedom.
 
-Realizado por Hugo Barros, Ricardo Gomes e Angelo Costa.
+The resources that will be Unity for creating the game, Visual Studio 2019 for creating Scripts for the game, Mega for storing project data and Paint.Net for designing the game.
 
-Link da pagina do jogo: https://0utdetad.itch.io/outside
+Directed by Hugo Barros, Ricardo Gomes and Ângelo Costa.
 
+Game page link: https://0utdetad.itch.io/outside
