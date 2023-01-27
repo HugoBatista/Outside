@@ -19,4 +19,4 @@ The resources that will be Unity for creating the game, Visual Studio 2019 for c
 
 Directed by Hugo Barros, Ricardo Gomes and Ângelo Costa.
 
-Game page link: <a href="https://0utdetad.itch.io/outside " target="_blank"></a>
+Game page link: https://0utdetad.itch.io/outside
